@@ -1,4 +1,4 @@
-import { buildFeedBackPath, extractFileData } from "../api/feedback";
+import { buildFeedBackPath, extractFileData } from ".";
 function handler(req, res) {
   const feedBackId = req.query.feedbackId;
   const filePath = buildFeedBackPath();

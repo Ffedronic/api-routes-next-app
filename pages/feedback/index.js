@@ -5,7 +5,7 @@ import { Fragment } from "react";
 function FeedbackPage(props) {
   const [feedbackData, setFeedbackData] = useState();
   function loadFeedBackHandler(id) {
-    fetch(`/api/${id}`)
+    fetch(`/api/feedback/${id}`)
       .then((response) => response.json())
       .then((data) => setFeedbackData(data.feedback));
   }
